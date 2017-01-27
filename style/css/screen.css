@@ -1,0 +1,35 @@
+/* benutzerdefinierte Variablen: */
+/* benutzerdefinierte Mixins: */
+/* Nur fuer die Startseite: Hoehe der Infofelder angleichen */
+/* line 27, ../sass/screen.scss */
+.field1 {
+  height: 100px;
+  border-style: none solid solid none;
+  border-color: #265a88;
+  border-radius: 15px;
+  border-width: 1px;
+  box-shadow: 10px 10px 10px lightgrey;
+}
+
+/* Schriftsachen */
+/* Kleine, unauffaellige Schrift fuer Fussnoten etc. */
+/* line 33, ../sass/screen.scss */
+.smallerruntext {
+  font-size: 10pc;
+}
+
+/* line 36, ../sass/screen.scss */
+.smalltype_l {
+  font-size: x-small;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: left;
+}
+
+/* line 40, ../sass/screen.scss */
+.smalltype_r {
+  font-size: x-small;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: right;
+}

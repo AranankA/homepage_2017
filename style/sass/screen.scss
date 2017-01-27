@@ -1,0 +1,43 @@
+@import "compass/css3";
+
+/* benutzerdefinierte Variablen: */
+
+$linienstaerke: 1px;
+$rahmenfarbe: #265a88;
+$rahmenradius: 15px;
+$rahmenstyle: solid;
+$schatten: 10px 10px 10px lightgrey;
+
+/* benutzerdefinierte Mixins: */
+
+@mixin rahmen(){
+  border-style: none $rahmenstyle $rahmenstyle none;
+  border-color: $rahmenfarbe;
+  border-radius: $rahmenradius;
+  border-width: $linienstaerke;
+  box-shadow: $schatten;
+}
+@mixin smalltype(){
+  font-size: x-small;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/* Nur fuer die Startseite: Hoehe der Infofelder angleichen */
+.field1{
+  height: 100px;
+  @include rahmen();
+}
+/* Schriftsachen */
+/* Kleine, unauffaellige Schrift fuer Fussnoten etc. */
+.smallerruntext{
+  font-size: 10pc;
+}
+.smalltype_l{
+  @include smalltype();
+  text-align: left;
+}
+.smalltype_r{
+  @include smalltype();
+  text-align: right;
+}
